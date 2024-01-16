@@ -1,6 +1,11 @@
 $main-color: #1eacc7
 $second-color: #ff5656
 
+=btn_hover 
+	&:hover 
+		background-image: none 
+		background-color: $main-color
+
 *
 	font-family: 'Roboto', sans-serif
 
@@ -77,6 +82,7 @@ nav
 		font-weight: 400
 		line-height: 46px
 		text-transform: uppercase
+		+btn_hover 
 
 .promo
 	min-height: 799px
@@ -124,6 +130,7 @@ nav
 		font-weight: 400
 		line-height: 63px
 		text-transform: uppercase
+		+btn_hover 
 
 .reasons
 	min-height: 849px
@@ -250,6 +257,26 @@ nav
 			border-radius: 100%
 			padding: 6px
 			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px 
+				height: 2px 
+				background-color: $main-color
+				transition: 0.3s all
+			&:after 
+				content: ''
+				position: absolute 
+				left: 50%
+				transform: translateX(-50%)
+				display: block 
+				height: 14px
+				width: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&:hover 
+				&:before, &:after 
+					background-color: $second-color
 
 .choice 
 	position: relative
