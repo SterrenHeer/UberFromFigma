@@ -50,8 +50,10 @@ nav
 		line-height: 14px
 
 	&_phone
+		display: block
+		margin-top: 8px
 		color: #FFF
-		text-align: center
+		text-align: right
 		font-size: 22px
 		font-weight: 400
 		text-transform: uppercase
@@ -70,7 +72,6 @@ nav
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 		font-size: 14px
 		font-weight: 400
-		line-height: 46px
 		text-transform: uppercase
 		+btn_hover 
 
@@ -84,7 +85,7 @@ nav
 		text-align: center
 		font-size: 60px
 		font-weight: 900
-		line-height: 24px
+		line-height: 60px
 		text-transform: uppercase
 
 	&_subheader
@@ -125,6 +126,33 @@ nav
 .reasons
 	min-height: 849px
 	padding: 20px 0 67px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 16px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 25px
+		width: 113px
+		height: 113px
+		background-color: $main-color
+		border-radius: 100%
+	&_descr
+		width: 371px
+	&_subtitle
+		color: $main-color
+		font-size: 17px
+		font-weight: 400
+		line-height: 21px
+
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
 
 .label
 	position: relative
@@ -170,37 +198,6 @@ nav
 	z-index: 2
 	&_white 
 		color: #fff
-
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 16px
-
-	.reasons_round
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-right: 25px
-		width: 113px
-		height: 113px
-		background-color: $main-color
-		border-radius: 100%
-
-	.reasons_descr
-		width: 371px
-
-		.reasons_subtitle
-			color: $main-color
-			font-size: 17px
-			font-weight: 400
-			line-height: 21px
-
-		.reasons_text
-			color: #202020
-			font-size: 15px
-			font-weight: 300
-			line-height: 21px
 
 .mobile 
 	min-height: 864px
@@ -423,4 +420,3 @@ footer
 			font-weight: 400
 			margin-top: 19px
 			text-transform: uppercase
-			
