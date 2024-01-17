@@ -1,9 +1,16 @@
 header
 	position: relative
+	height: 50px
 
 nav
-	height: 53px
+	position: fixed
+	width: 100%
+	height: 50px
 	background-color: #212121
+	z-index: 5
+
+.hamburger
+	display: none
 
 .menu
 	display: flex
@@ -11,13 +18,14 @@ nav
 	padding: 13px 70px
 	margin: 0
 	list-style-type: none
-
 	&_link
 		color: #FFF
 		font-size: 15px
 		font-weight: 300
 		line-height: 15px
-
+		&:hover
+			text-decoration: none
+			color: $main-color
 	&_item
 		border-right: 2px dotted black
 		padding-right: 28px
@@ -26,21 +34,19 @@ nav
 
 .subheader
 	position: absolute
+	top: 50px
 	width: 100%
 	height: 87px
 	background-color: rgba(0, 0, 0, 0.6)
-
 	&_logo
 		display: block
 		max-width: 100%
 		margin-top: 16px
-
 	&_official
 		color: #FFF
 		margin-top: 6px
 		font-size: 13px
 		font-weight: 100
-
 	&_call
 		margin-top: 19px
 		color: #FFF
@@ -48,7 +54,6 @@ nav
 		font-size: 12px
 		font-weight: 300
 		line-height: 14px
-
 	&_phone
 		display: block
 		margin-top: 8px
@@ -58,7 +63,6 @@ nav
 		font-weight: 400
 		text-transform: uppercase
 		line-height: 12px
-
 	&_btn
 		margin-top: 22px
 		width: 172px
@@ -79,7 +83,6 @@ nav
 	min-height: 799px
 	padding: 155px 0 185px 0
 	background: url('../img/bg/main_bg.jpg') center (center / cover) no-repeat
-
 	&_header
 		color: #FFF
 		text-align: center
@@ -87,7 +90,6 @@ nav
 		font-weight: 900
 		line-height: 60px
 		text-transform: uppercase
-
 	&_subheader
 		margin-top: 22px
 		color: #FFF
@@ -96,7 +98,6 @@ nav
 		font-weight: 700
 		line-height: 48px
 		text-transform: uppercase
-
 	&_descr
 		margin-top: 16px
 		color: #FFF
@@ -104,7 +105,6 @@ nav
 		font-size: 18px
 		font-weight: 400
 		line-height: 24px
-
 	&_btn
 		width: 259px
 		height: 63px
